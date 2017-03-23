@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7D3971B08505AF68C27E74BE0B5F77EC75AE870D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7D3971B08505AF68C27E74BE0B5F77EC75AE870D" : 9223372036854775807,
+    "36C9ABCB8C9421CE533B15BE607B31972C587FB6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CC16BA3D-6DFC-4D5D-80C2-7ECB3784325F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7D3971B08505AF68C27E74BE0B5F77EC75AE870D" : "animations\/",
+    "36C9ABCB8C9421CE533B15BE607B31972C587FB6" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "animationsGif",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "animationsGif\/animationsGif.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/israman30\/CameraPhotoProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "36C9ABCB8C9421CE533B15BE607B31972C587FB6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/israman30\/animations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D3971B08505AF68C27E74BE0B5F77EC75AE870D"
+    }
+  ]
+}
