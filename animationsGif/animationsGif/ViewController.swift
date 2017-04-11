@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     
     @IBOutlet weak var buttonAnimate: UIButton!
+    
+    @IBOutlet weak var fadeBtn: UIButton!
+    
+    @IBOutlet weak var slideInBtn: UIButton!
+    
+    @IBOutlet weak var grownBtn: UIButton!
+    
     var counter = 1
     
     var isAnimated = false
@@ -32,8 +39,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        buttonAnimate.layer.borderColor = UIColor.white.cgColor
+        buttonAnimate.layer.borderWidth = 2
+        buttonAnimate.layer.cornerRadius = 15
+        
+        fadeBtn.layer.borderColor = UIColor.white.cgColor
+        fadeBtn.layer.borderWidth = 3
+        fadeBtn.layer.cornerRadius = 35
+        
+        slideInBtn.layer.borderColor = UIColor.white.cgColor
+        slideInBtn.layer.borderWidth = 3
+        slideInBtn.layer.cornerRadius = 35
+        
+        grownBtn.layer.borderColor = UIColor.white.cgColor
+        grownBtn.layer.borderWidth = 3
+        grownBtn.layer.cornerRadius = 35
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -78,6 +102,7 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func unwindToMain(_: UIStoryboardSegue){}
 }
 
 
