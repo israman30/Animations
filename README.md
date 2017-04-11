@@ -3,7 +3,14 @@
 ##### by
 *Israel Manzo*
 
-## This a animation demo app
-![Alt Image Text](images/NotfScreenShot.png)
-![Alt Image Text](images/BlueScreenShot.png)
-![Alt Image Text](images/RedScreenShot.png)
+## Animation demo app
+### View Controller animated with Gif
+* Fade In
+* Slide In
+* Grown 
+
+![Alt Image Text](images/MainScreenShot.png)
+
+### Button moving with user interaction
+
+![Alt Image Text](images/SecondScreenShot.png)
