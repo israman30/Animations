@@ -14,3 +14,8 @@
 ### Button moving with user interaction
 
 ![Alt Image Text](images/SecondScreenShot.png)
+
+### Animated buttons
+* Main button hide and show three over buttons
+
+![Alt Image Text](images/ThirdScreenShot.png)
