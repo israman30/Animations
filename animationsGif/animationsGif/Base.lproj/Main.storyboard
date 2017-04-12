@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gge-yl-OgK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -366,10 +366,83 @@
             </objects>
             <point key="canvasLocation" x="3320.8000000000002" y="138.98050974512745"/>
         </scene>
+        <!--Six View Controller-->
+        <scene sceneID="A4F-j0-oVA">
+            <objects>
+                <viewController id="gge-yl-OgK" customClass="SixViewController" customModule="animationsGif" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UBr-WI-sT3"/>
+                        <viewControllerLayoutGuide type="bottom" id="8R5-tY-RYQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gw8-5i-9CY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mazinger_z" translatesAutoresizingMaskIntoConstraints="NO" id="6On-yY-nXp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKP-Rw-c7z">
+                                <rect key="frame" x="164" y="46" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Peh-Y6-O77" kind="modal" id="N3W-HB-FaY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="DKP-Rw-c7z" id="Wv8-TL-AOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjC-RT-mV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4157.6000000000004" y="123.68815592203899"/>
+        </scene>
+        <!--Six One View Controller-->
+        <scene sceneID="b7C-IZ-9rU">
+            <objects>
+                <viewController id="Peh-Y6-O77" customClass="SixOneViewController" customModule="animationsGif" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q08-6t-Zf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="832-nW-P90"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Sc-c9-wUH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5H-4d-TrC">
+                                <rect key="frame" x="164" y="46" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissToPrevious:" destination="Peh-Y6-O77" eventType="touchUpInside" id="xVB-jM-ITL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissBtn" destination="U5H-4d-TrC" id="caF-Uq-eyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eb1-L9-gyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4860" y="124"/>
+        </scene>
     </scenes>
     <resources>
         <image name="0.gif" width="800" height="800"/>
         <image name="book" width="400" height="400"/>
+        <image name="mazinger_z" width="1760" height="1004"/>
         <image name="pencil" width="400" height="400"/>
         <image name="stars" width="512" height="512"/>
         <image name="up" width="256" height="256"/>
