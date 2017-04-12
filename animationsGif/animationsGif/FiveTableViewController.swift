@@ -8,10 +8,18 @@
 
 import UIKit
 
-class FiveTableViewController: UITableViewController {
+class FiveTableViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var tableViewLabelAnimation: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableViewLabelAnimation.layer.borderColor = UIColor.red.cgColor
+        tableViewLabelAnimation.layer.borderWidth = 2.5
+        tableViewLabelAnimation.layer.cornerRadius = 22
 
     }
 
@@ -26,25 +34,36 @@ class FiveTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 40
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         cell.textLabel?.text = "Animations Effects \(indexPath.row)"
+        
+        cell.layer.cornerRadius = 15
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.yellow.cgColor
+        
+        cell.layer.shadowOffset = CGSize(width: 2, height: 2)
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowRadius = 1
+        cell.layer.masksToBounds = false
 
         return cell
     }
     
+    // MARK: THis function will animate the cell
     func animateTable(){
         tableView.reloadData()
         let cells = tableView.visibleCells
