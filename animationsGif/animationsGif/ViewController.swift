@@ -57,12 +57,6 @@ class ViewController: UIViewController {
         grownBtn.layer.cornerRadius = 35
     }
     
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func animation(_ sender: Any) {
         
         if isAnimated {
@@ -101,7 +95,8 @@ class ViewController: UIViewController {
             self.image.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         }
     }
-
+    
+    // MARK: Unwind segue
     @IBAction func unwindToMain(_: UIStoryboardSegue){}
 }
 

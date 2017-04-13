@@ -14,6 +14,7 @@ class MovingButtonTableViewController: UIViewController {
     
     @IBOutlet weak var person: UIImageView!
     
+    // MARK: Moving button animation functions
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch! = touches.first!
         location = touch.location(in: self.view)
@@ -25,6 +26,7 @@ class MovingButtonTableViewController: UIViewController {
         location = touch.location(in: self.view)
         person.center = location
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,5 +37,6 @@ class MovingButtonTableViewController: UIViewController {
       
     }
     
+    // MARK: Unwind segue
     @IBAction func unwindToSecond(_:UIStoryboardSegue){}
 }
