@@ -12,6 +12,10 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableViewLabelAnimation: UILabel!
     
+    @IBOutlet weak var backBtn: UIButton!
+    
+    @IBOutlet weak var nextBtn: UIButton!
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -19,11 +23,15 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
         
         tableViewLabelAnimation.layer.borderColor = UIColor.red.cgColor
         tableViewLabelAnimation.layer.borderWidth = 2.5
-        tableViewLabelAnimation.layer.cornerRadius = 22
+        tableViewLabelAnimation.layer.cornerRadius = 10
         
-//        backBtn.layer.cornerRadius = 23
-//        backBtn.layer.borderColor = UIColor.white.cgColor
-//        backBtn.layer.borderWidth = 2
+        backBtn.layer.cornerRadius = 5
+        backBtn.layer.borderColor = UIColor.white.cgColor
+        backBtn.layer.borderWidth = 2
+        
+        nextBtn.layer.cornerRadius = 5
+        nextBtn.layer.borderColor = UIColor.white.cgColor
+        nextBtn.layer.borderWidth = 2
 
     }
 
