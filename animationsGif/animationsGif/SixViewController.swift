@@ -8,9 +8,11 @@
 
 import UIKit
 
-class SixViewController: UIViewController {
+class SixViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     @IBOutlet weak var menuBtn: UIButton!
+    
+    let transition = TransitionVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,20 +20,24 @@ class SixViewController: UIViewController {
         menuBtn.layer.cornerRadius = menuBtn.frame.size.width / 2
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        transition.startingPoint = menuBtn.center
+        transition.circleColor = menuBtn.backgroundColor!
+        
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        transition.startingPoint = menuBtn.center
+        transition.circleColor = menuBtn.backgroundColor!
+        
+        return transition
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let secondVC = segue.destination as! SixOneViewController
+        secondVC.transitioningDelegate = self
+        secondVC.modalPresentationStyle = .custom
     }
-    */
-
 }

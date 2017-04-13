@@ -11,12 +11,16 @@ import UIKit
 class SixOneViewController: UIViewController {
     
     @IBOutlet weak var dismissBtn: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         dismissBtn.layer.cornerRadius = dismissBtn.frame.size.width / 2
     }
+    
+    
 
     @IBAction func dismissToPrevious(_ sender: Any) {
         
