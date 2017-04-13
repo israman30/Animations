@@ -12,10 +12,22 @@ class SixOneViewController: UIViewController {
     
     @IBOutlet weak var dismissBtn: UIButton!
     
+    @IBOutlet weak var backBtn: UIButton!
+    
+    @IBOutlet weak var nextBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         dismissBtn.layer.cornerRadius = dismissBtn.frame.size.width / 2
+        
+        backBtn.layer.cornerRadius = 23
+        backBtn.layer.borderColor = UIColor.white.cgColor
+        backBtn.layer.borderWidth = 2
+        
+        nextBtn.layer.cornerRadius = 23
+        nextBtn.layer.borderColor = UIColor.white.cgColor
+        nextBtn.layer.borderWidth = 2
     }
     
     

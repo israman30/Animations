@@ -23,7 +23,7 @@ class SevenViewController: UIViewController {
         applyMotionEffect(toView: backgroundImage, magnitude: 10)
         applyMotionEffect(toView: mokeyImage, magnitude: -20)
         
-        backBtn.layer.cornerRadius = 15
+        backBtn.layer.cornerRadius = 23
         backBtn.layer.borderColor = UIColor.white.cgColor
         backBtn.layer.borderWidth = 2
     

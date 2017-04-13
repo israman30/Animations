@@ -43,4 +43,6 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
         secondVC.transitioningDelegate = self
         secondVC.modalPresentationStyle = .custom
     }
+    
+    @IBAction func unwdinToSix(_: UIStoryboardSegue){}
 }
