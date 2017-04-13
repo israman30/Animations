@@ -29,7 +29,7 @@ class SevenViewController: UIViewController {
     
     }
     
-    // MARK: Moting effect function
+    // MARK: Motion effect function
     func applyMotionEffect(toView view: UIView, magnitude: CGFloat){
         let xMotion = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = -magnitude
