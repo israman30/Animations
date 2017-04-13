@@ -69,6 +69,7 @@
 		8D9BFE9C1E9EC97C00713B13 /* SixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE9B1E9EC97C00713B13 /* SixViewController.swift */; };
 		8D9BFE9E1E9EC99800713B13 /* SixOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE9D1E9EC99800713B13 /* SixOneViewController.swift */; };
 		8D9BFEA01E9ECB8F00713B13 /* TransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE9F1E9ECB8F00713B13 /* TransitionVC.swift */; };
+		8D9BFEA31E9FE40F00713B13 /* SevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		8D9BFE9B1E9EC97C00713B13 /* SixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
 		8D9BFE9D1E9EC99800713B13 /* SixOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixOneViewController.swift; sourceTree = "<group>"; };
 		8D9BFE9F1E9ECB8F00713B13 /* TransitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionVC.swift; sourceTree = "<group>"; };
+		8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SevenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				8D9BFE951E9D8F2B00713B13 /* ThirdTableViewController.swift */,
 				8D9BFE971E9DAA1600713B13 /* FourViewController.swift */,
 				8D9BFE991E9DB22700713B13 /* FiveTableViewController.swift */,
+				8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */,
 				8D9BFEA11E9EFC7200713B13 /* TansitionVC */,
 				8D1080911E6F1B0800824319 /* Main.storyboard */,
 				8D1080941E6F1B0800824319 /* Assets.xcassets */,
@@ -382,6 +385,7 @@
 				8D9BFE981E9DAA1600713B13 /* FourViewController.swift in Sources */,
 				8D9BFE9C1E9EC97C00713B13 /* SixViewController.swift in Sources */,
 				8D10808E1E6F1B0700824319 /* AppDelegate.swift in Sources */,
+				8D9BFEA31E9FE40F00713B13 /* SevenViewController.swift in Sources */,
 				8D9BFE961E9D8F2B00713B13 /* ThirdTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
