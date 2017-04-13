@@ -14,11 +14,17 @@ class SevenViewController: UIViewController {
     
     @IBOutlet weak var mokeyImage: UIImageView!
     
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         applyMotionEffect(toView: backgroundImage, magnitude: 10)
         applyMotionEffect(toView: mokeyImage, magnitude: -20)
+        
+        backBtn.layer.cornerRadius = 15g
+        backBtn.layer.borderColor = UIColor.white.cgColor
+        backBtn.layer.borderWidth = 2
     
     }
     
