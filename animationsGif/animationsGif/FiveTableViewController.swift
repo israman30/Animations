@@ -21,10 +21,12 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Editing table view
         tableViewLabelAnimation.layer.borderColor = UIColor.red.cgColor
         tableViewLabelAnimation.layer.borderWidth = 2.5
         tableViewLabelAnimation.layer.cornerRadius = 10
         
+        // Editing back and next buttons
         backBtn.layer.cornerRadius = 5
         backBtn.layer.borderColor = UIColor.white.cgColor
         backBtn.layer.borderWidth = 2
@@ -39,13 +41,8 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         animateTable()
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: - Table view data source
-
      func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -62,6 +59,8 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
 
         cell.textLabel?.text = "Animations Effects \(indexPath.row)"
         
+        
+        // Editing cell
         cell.layer.cornerRadius = 15
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.yellow.cgColor
