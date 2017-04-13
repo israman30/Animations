@@ -20,6 +20,7 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
         menuBtn.layer.cornerRadius = menuBtn.frame.size.width / 2
     }
 
+    // MARK: Transition functions delegates
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .present
         transition.startingPoint = menuBtn.center
@@ -27,6 +28,7 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
         
         return transition
     }
+    
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .dismiss
         transition.startingPoint = menuBtn.center
@@ -35,6 +37,7 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
         return transition
     }
     
+    // MARK: prapare for segue function
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondVC = segue.destination as! SixOneViewController
         secondVC.transitioningDelegate = self
