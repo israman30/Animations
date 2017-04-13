@@ -19,10 +19,11 @@ class SevenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setting or calling the animation function
         applyMotionEffect(toView: backgroundImage, magnitude: 10)
         applyMotionEffect(toView: mokeyImage, magnitude: -20)
         
-        backBtn.layer.cornerRadius = 15g
+        backBtn.layer.cornerRadius = 15
         backBtn.layer.borderColor = UIColor.white.cgColor
         backBtn.layer.borderWidth = 2
     
