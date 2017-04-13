@@ -38,4 +38,3 @@
 * The logo moves as apple home screen
 
 ![Alt Image Text](images/MonkeyScreenShot.png)
-
