@@ -415,10 +415,10 @@
             </objects>
             <point key="canvasLocation" x="4157.6000000000004" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Seven View Controller-->
         <scene sceneID="mpj-ch-3bT">
             <objects>
-                <viewController id="cZT-cM-kpI" sceneMemberID="viewController">
+                <viewController id="cZT-cM-kpI" customClass="SevenViewController" customModule="animationsGif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HYF-k9-xKy"/>
                         <viewControllerLayoutGuide type="bottom" id="pBA-Jk-sbU"/>
@@ -449,6 +449,10 @@
                             <constraint firstItem="oRh-MI-CHt" firstAttribute="leading" secondItem="eGo-Wi-JGl" secondAttribute="leading" id="vjA-7W-zNm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="oRh-MI-CHt" id="ArA-c3-YGc"/>
+                        <outlet property="mokeyImage" destination="slL-QR-iB7" id="b5N-pt-Or2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXs-NU-HpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
