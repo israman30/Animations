@@ -14,6 +14,10 @@ class MovingButtonTableViewController: UIViewController {
     
     @IBOutlet weak var person: UIImageView!
     
+    @IBOutlet weak var backBtn: UIButton!
+    
+    @IBOutlet weak var nextBtn: UIButton!
+    
     // MARK: Moving button animation functions
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch! = touches.first!
@@ -34,6 +38,14 @@ class MovingButtonTableViewController: UIViewController {
         person.layer.cornerRadius = 20
         person.layer.borderColor = UIColor.black.cgColor
         person.layer.borderWidth = 1
+        
+        backBtn.layer.cornerRadius = 23
+        backBtn.layer.borderColor = UIColor.black.cgColor
+        backBtn.layer.borderWidth = 2
+        
+        nextBtn.layer.cornerRadius = 23
+        nextBtn.layer.borderColor = UIColor.black.cgColor
+        nextBtn.layer.borderWidth = 2
       
     }
     

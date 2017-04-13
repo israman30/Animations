@@ -20,6 +20,10 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
         tableViewLabelAnimation.layer.borderColor = UIColor.red.cgColor
         tableViewLabelAnimation.layer.borderWidth = 2.5
         tableViewLabelAnimation.layer.cornerRadius = 22
+        
+//        backBtn.layer.cornerRadius = 23
+//        backBtn.layer.borderColor = UIColor.white.cgColor
+//        backBtn.layer.borderWidth = 2
 
     }
 
