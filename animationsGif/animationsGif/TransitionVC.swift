@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Tansitin class
 class TransitionVC: NSObject {
     
     var circle = UIView()
@@ -27,10 +28,9 @@ class TransitionVC: NSObject {
     }
     
     var transitionMode: circularTransitionMode = .present
-    
-
 }
 
+// MARK: Trasition View Controller Extension for with animation
 extension TransitionVC: UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
