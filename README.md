@@ -35,7 +35,7 @@
 ![Alt Image Text](images/MazScreenShot.png)
 
 ### Effect Logo Image 3D
-* The logo will move as apple home screen
+* The logo moves as apple home screen
 
 ![Alt Image Text](images/MonkeyScreenShot.png)
 
