@@ -11,13 +11,19 @@ import UIKit
 class ThirdTableViewController: UIViewController {
 
     @IBOutlet weak var oneBtn: UIButton!
+    
     @IBOutlet weak var twoBtn: UIButton!
+    
     @IBOutlet weak var threeBtn: UIButton!
+    
     @IBOutlet weak var fourBtn: UIButton!
     
     var oneBtnCenter: CGPoint!
+    
     var twoBtnCenter: CGPoint!
+    
     var threeBtnCenter: CGPoint!
+    
     var fourBtnCenter: CGPoint!
     
     
@@ -49,6 +55,7 @@ class ThirdTableViewController: UIViewController {
             })
             
             sender.setImage(#imageLiteral(resourceName: "down"), for: .normal)
+            
         } else {
             
             UIView.animate(withDuration: 0.3, animations: {
@@ -61,6 +68,7 @@ class ThirdTableViewController: UIViewController {
                 self.fourBtn.center = self.oneBtn.center
                 
             })
+            
             sender.setImage(#imageLiteral(resourceName: "up"), for: .normal)
         }
     }
@@ -68,11 +76,17 @@ class ThirdTableViewController: UIViewController {
     // MARK: This function will toggle the buttons
     func toggleButton(button: UIButton, imageOn: UIImage, imageOff: UIImage){
         if button.currentImage == imageOff {
+            
             button.setImage(imageOn, for: .normal)
+            
         } else {
+            
             button.setImage(imageOff, for: .normal)
         }
     }
     
     @IBAction func unwindToThird(_:UIStoryboardSegue){}
 }
+
+
+

@@ -60,9 +60,11 @@ class ViewController: UIViewController {
     @IBAction func animation(_ sender: Any) {
         
         if isAnimated {
+            
             timer.invalidate()
             buttonAnimate.setTitle("Start Animating", for: [])
             isAnimated = false
+            
         } else {
         
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.animated), userInfo: nil, repeats: true)
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
     @IBAction func fadeIn(_ sender: Any) {
         
         image.alpha = 0
+        
         UIView.animate(withDuration: 1) { 
              self.image.alpha = 1
         }
@@ -99,17 +102,6 @@ class ViewController: UIViewController {
     // MARK: Unwind segue
     @IBAction func unwindToMain(_: UIStoryboardSegue){}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

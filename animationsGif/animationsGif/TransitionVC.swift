@@ -14,6 +14,7 @@ class TransitionVC: NSObject {
     var circle = UIView()
     
     var startingPoint = CGPoint.zero {
+        
         didSet{
             circle.center = startingPoint
         }
@@ -35,6 +36,7 @@ extension TransitionVC: UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
+    
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
         
@@ -72,6 +74,7 @@ extension TransitionVC: UIViewControllerAnimatedTransitioning {
             }
             
         } else {
+            
             let transitionModeKey = (transitionMode == .pop) ? UITransitionContextViewKey.to : UITransitionContextViewKey.from
             
             if let returningView = transitionContext.view(forKey: transitionModeKey){

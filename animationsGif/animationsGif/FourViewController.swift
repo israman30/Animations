@@ -18,9 +18,11 @@ class FourViewController: UIViewController {
         let button = sender as! UIButton
         let bounds = button.bounds
         
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: .curveEaseInOut, animations: { 
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
+            
             button.bounds = CGRect(x: bounds.origin.x - 30, y: bounds.origin.y, width: bounds.size.width + 60, height: bounds.size.height)
         }) { (succes:Bool) in
+            
             if succes {
                 
                 UIView.animate(withDuration: 0.5, animations: {
@@ -31,5 +33,6 @@ class FourViewController: UIViewController {
         }
     }
     
+    // MARK: Unwind to four VC
     @IBAction func unwindToFour(_: UIStoryboardSegue){}
 }

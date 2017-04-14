@@ -22,6 +22,7 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
 
     // MARK: Transition functions delegates
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
         transition.transitionMode = .present
         transition.startingPoint = menuBtn.center
         transition.circleColor = menuBtn.backgroundColor!
@@ -30,6 +31,7 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
         transition.transitionMode = .dismiss
         transition.startingPoint = menuBtn.center
         transition.circleColor = menuBtn.backgroundColor!
@@ -39,6 +41,7 @@ class SixViewController: UIViewController, UIViewControllerTransitioningDelegate
     
     // MARK: prapare for segue function
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let secondVC = segue.destination as! SixOneViewController
         secondVC.transitioningDelegate = self
         secondVC.modalPresentationStyle = .custom

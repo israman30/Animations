@@ -31,6 +31,7 @@ class SevenViewController: UIViewController {
     
     // MARK: Motion effect function
     func applyMotionEffect(toView view: UIView, magnitude: CGFloat){
+        
         let xMotion = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = -magnitude
         xMotion.maximumRelativeValue = magnitude

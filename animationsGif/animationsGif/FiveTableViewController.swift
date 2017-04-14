@@ -39,6 +39,7 @@ class FiveTableViewController: UIViewController, UITableViewDataSource {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         animateTable()
     }
 
