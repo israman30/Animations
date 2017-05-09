@@ -45,5 +45,7 @@ class SevenViewController: UIViewController {
         
         view.addMotionEffect(motion)
     }
+    
+    @IBAction func unwindToSeven(_ : UIStoryboardSegue){}
 
 }
