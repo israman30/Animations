@@ -11,7 +11,9 @@ import UIKit
 class OchoViewController: UIViewController {
 
     @IBOutlet weak var menuView: UIView!
+    
     @IBOutlet weak var buttonView: UIView!
+    
     @IBOutlet weak var menuBtn: UIButton!
     
     override func viewDidLoad() {
@@ -36,11 +38,11 @@ class OchoViewController: UIViewController {
                 self.menuView.transform = .identity
                 self.menuBtn.transform = .identity
             }) { (true) in
-                //..
             }
         }
     }
     
+    // MARK: - This function convert values on radiant
     func radiant(_ degree:Double)-> CGFloat {
         return CGFloat(degree * .pi / degree)
     }
