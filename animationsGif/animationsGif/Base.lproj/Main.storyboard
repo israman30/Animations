@@ -1071,6 +1071,10 @@
                                             <constraint firstAttribute="width" constant="283" id="trL-uS-dTR"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icons8-thumbs_down" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-H0-flW">
+                                        <rect key="frame" x="142" y="175" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <gestureRecognizers/>
@@ -1104,6 +1108,7 @@
                     </view>
                     <connections>
                         <outlet property="card" destination="aaQ-xZ-Ep5" id="t0d-cx-fZG"/>
+                        <outlet property="thumbsImageView" destination="XhY-H0-flW" id="VF9-Fj-vz9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ApC-og-fOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1215,6 +1220,7 @@
         <image name="amazonia" width="1023" height="666"/>
         <image name="book" width="400" height="400"/>
         <image name="icons8-expand_arrow_filled" width="25" height="25"/>
+        <image name="icons8-thumbs_down" width="25" height="25"/>
         <image name="mazinger_z" width="1760" height="1004"/>
         <image name="monkey" width="640" height="413"/>
         <image name="night" width="2048" height="2048"/>
