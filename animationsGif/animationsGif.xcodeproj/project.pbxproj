@@ -66,6 +66,7 @@
 		8D230BF91EC282210092CE06 /* NineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D230BF81EC282210092CE06 /* NineViewController.swift */; };
 		8D230BFB1EC352770092CE06 /* TenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D230BFA1EC352770092CE06 /* TenViewController.swift */; };
 		8D2AE30A1EC3A44E00315E0B /* OnceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2AE3091EC3A44E00315E0B /* OnceViewController.swift */; };
+		8D2AE30D1EC3C60100315E0B /* OnceCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2AE30C1EC3C60100315E0B /* OnceCardViewController.swift */; };
 		8D9BFE941E9D80D900713B13 /* MovingButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE931E9D80D900713B13 /* MovingButtonTableViewController.swift */; };
 		8D9BFE961E9D8F2B00713B13 /* ThirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE951E9D8F2B00713B13 /* ThirdTableViewController.swift */; };
 		8D9BFE981E9DAA1600713B13 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE971E9DAA1600713B13 /* FourViewController.swift */; };
@@ -138,6 +139,7 @@
 		8D230BF81EC282210092CE06 /* NineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NineViewController.swift; sourceTree = "<group>"; };
 		8D230BFA1EC352770092CE06 /* TenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenViewController.swift; sourceTree = "<group>"; };
 		8D2AE3091EC3A44E00315E0B /* OnceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnceViewController.swift; sourceTree = "<group>"; };
+		8D2AE30C1EC3C60100315E0B /* OnceCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnceCardViewController.swift; sourceTree = "<group>"; };
 		8D9BFE931E9D80D900713B13 /* MovingButtonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingButtonTableViewController.swift; sourceTree = "<group>"; };
 		8D9BFE951E9D8F2B00713B13 /* ThirdTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdTableViewController.swift; sourceTree = "<group>"; };
 		8D9BFE971E9DAA1600713B13 /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
@@ -180,20 +182,10 @@
 			children = (
 				8D1081031E6F20AB00824319 /* images */,
 				8D10808D1E6F1B0700824319 /* AppDelegate.swift */,
-				8D10808F1E6F1B0700824319 /* ViewController.swift */,
-				8D9BFE931E9D80D900713B13 /* MovingButtonTableViewController.swift */,
-				8D9BFE951E9D8F2B00713B13 /* ThirdTableViewController.swift */,
-				8D9BFE971E9DAA1600713B13 /* FourViewController.swift */,
-				8D9BFE991E9DB22700713B13 /* FiveTableViewController.swift */,
-				8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */,
-				8D230BF61EC237610092CE06 /* OchoViewController.swift */,
-				8D230BF81EC282210092CE06 /* NineViewController.swift */,
-				8D230BFA1EC352770092CE06 /* TenViewController.swift */,
-				8D2AE3091EC3A44E00315E0B /* OnceViewController.swift */,
+				8D2AE30F1EC3C6B800315E0B /* LogicVC */,
+				8D2AE30B1EC3C5CD00315E0B /* OnceVC */,
 				8D9BFEA11E9EFC7200713B13 /* TansitionVC */,
-				8D1080911E6F1B0800824319 /* Main.storyboard */,
-				8D1080941E6F1B0800824319 /* Assets.xcassets */,
-				8D1080961E6F1B0800824319 /* LaunchScreen.storyboard */,
+				8D2AE30E1EC3C69D00315E0B /* UIs */,
 				8D1080991E6F1B0800824319 /* Info.plist */,
 			);
 			path = animationsGif;
@@ -254,6 +246,41 @@
 				8D1080D01E6F209E00824319 /* 49.gif */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		8D2AE30B1EC3C5CD00315E0B /* OnceVC */ = {
+			isa = PBXGroup;
+			children = (
+				8D2AE3091EC3A44E00315E0B /* OnceViewController.swift */,
+				8D2AE30C1EC3C60100315E0B /* OnceCardViewController.swift */,
+			);
+			name = OnceVC;
+			sourceTree = "<group>";
+		};
+		8D2AE30E1EC3C69D00315E0B /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				8D1080911E6F1B0800824319 /* Main.storyboard */,
+				8D1080941E6F1B0800824319 /* Assets.xcassets */,
+				8D1080961E6F1B0800824319 /* LaunchScreen.storyboard */,
+			);
+			name = UIs;
+			sourceTree = "<group>";
+		};
+		8D2AE30F1EC3C6B800315E0B /* LogicVC */ = {
+			isa = PBXGroup;
+			children = (
+				8D10808F1E6F1B0700824319 /* ViewController.swift */,
+				8D9BFE931E9D80D900713B13 /* MovingButtonTableViewController.swift */,
+				8D9BFE951E9D8F2B00713B13 /* ThirdTableViewController.swift */,
+				8D9BFE971E9DAA1600713B13 /* FourViewController.swift */,
+				8D9BFE991E9DB22700713B13 /* FiveTableViewController.swift */,
+				8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */,
+				8D230BF61EC237610092CE06 /* OchoViewController.swift */,
+				8D230BF81EC282210092CE06 /* NineViewController.swift */,
+				8D230BFA1EC352770092CE06 /* TenViewController.swift */,
+			);
+			name = LogicVC;
 			sourceTree = "<group>";
 		};
 		8D9BFEA11E9EFC7200713B13 /* TansitionVC */ = {
@@ -389,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2AE30D1EC3C60100315E0B /* OnceCardViewController.swift in Sources */,
 				8D9BFE941E9D80D900713B13 /* MovingButtonTableViewController.swift in Sources */,
 				8D9BFE9A1E9DB22700713B13 /* FiveTableViewController.swift in Sources */,
 				8D9BFEA01E9ECB8F00713B13 /* TransitionVC.swift in Sources */,

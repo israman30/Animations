@@ -9,6 +9,7 @@
 import UIKit
 
 class OnceViewController: UIViewController {
+    
     @IBOutlet weak var bckGImageView: UIImageView!
 
     @IBOutlet weak var titleLabel: UILabel!

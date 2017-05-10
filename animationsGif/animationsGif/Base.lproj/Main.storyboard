@@ -1028,10 +1028,10 @@
             </objects>
             <point key="canvasLocation" x="8288.7999999999993" y="105.69715142428787"/>
         </scene>
-        <!--View Controller-->
+        <!--Once Card View Controller-->
         <scene sceneID="am3-RZ-vth">
             <objects>
-                <viewController id="Ewf-Ga-Yhy" sceneMemberID="viewController">
+                <viewController id="Ewf-Ga-Yhy" customClass="OnceCardViewController" customModule="animationsGif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pmg-iI-77k"/>
                         <viewControllerLayoutGuide type="bottom" id="WFe-mh-sus"/>
@@ -1043,42 +1043,75 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall1" translatesAutoresizingMaskIntoConstraints="NO" id="yx9-4Y-ogG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aaQ-xZ-Ep5">
-                                <rect key="frame" x="37" y="127" width="300" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaQ-xZ-Ep5" userLabel="card">
+                                <rect key="frame" x="37" y="137" width="300" height="350"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check this out..!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEq-yN-Cu2">
-                                        <rect key="frame" x="42" y="8" width="207" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check this out..!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEq-yN-Cu2">
+                                        <rect key="frame" x="42" y="8" width="207" height="31.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="207" id="ZCj-RA-oYj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coolest ever!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-Mo-Rxc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coolest ever!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-Mo-Rxc">
                                         <rect key="frame" x="80" y="62" width="130" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="qrb-xY-wSK"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ultraman" translatesAutoresizingMaskIntoConstraints="NO" id="y74-pM-zLI">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ultraman" translatesAutoresizingMaskIntoConstraints="NO" id="y74-pM-zLI">
                                         <rect key="frame" x="9" y="91" width="283" height="251"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="251" id="2oS-no-agf"/>
+                                            <constraint firstAttribute="width" constant="283" id="trL-uS-dTR"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="y74-pM-zLI" secondAttribute="trailing" constant="8" id="1Sw-4W-hJB"/>
+                                    <constraint firstAttribute="height" constant="350" id="BVa-JH-Qi6"/>
+                                    <constraint firstAttribute="width" constant="300" id="IQX-VW-vXV"/>
+                                    <constraint firstItem="JGr-Mo-Rxc" firstAttribute="leading" secondItem="aaQ-xZ-Ep5" secondAttribute="leading" constant="80" id="K9t-vi-v9D"/>
+                                    <constraint firstItem="y74-pM-zLI" firstAttribute="top" secondItem="JGr-Mo-Rxc" secondAttribute="bottom" constant="8" id="b9p-0Y-W9n"/>
+                                    <constraint firstItem="QEq-yN-Cu2" firstAttribute="top" secondItem="aaQ-xZ-Ep5" secondAttribute="top" constant="8" id="d59-Ye-Ium"/>
+                                    <constraint firstItem="QEq-yN-Cu2" firstAttribute="leading" secondItem="aaQ-xZ-Ep5" secondAttribute="leading" constant="42" id="dNR-FR-5nS"/>
+                                    <constraint firstItem="JGr-Mo-Rxc" firstAttribute="top" secondItem="QEq-yN-Cu2" secondAttribute="bottom" constant="22.5" id="e1h-JU-tLz"/>
+                                    <constraint firstAttribute="trailing" secondItem="JGr-Mo-Rxc" secondAttribute="trailing" constant="90" id="fMZ-sn-u7D"/>
+                                    <constraint firstAttribute="trailing" secondItem="QEq-yN-Cu2" secondAttribute="trailing" constant="51" id="nXk-QQ-dun"/>
+                                    <constraint firstItem="y74-pM-zLI" firstAttribute="leading" secondItem="aaQ-xZ-Ep5" secondAttribute="leading" constant="9" id="otu-cy-hRb"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0Ce-1d-ScP" appends="YES" id="TRP-ce-vMx"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yx9-4Y-ogG" firstAttribute="top" secondItem="22Z-yb-trp" secondAttribute="top" id="Glv-2f-9j0"/>
+                            <constraint firstItem="aaQ-xZ-Ep5" firstAttribute="centerX" secondItem="22Z-yb-trp" secondAttribute="centerX" id="QKL-t5-ywe"/>
                             <constraint firstAttribute="trailing" secondItem="yx9-4Y-ogG" secondAttribute="trailing" id="QoY-E5-eku"/>
                             <constraint firstItem="yx9-4Y-ogG" firstAttribute="leading" secondItem="22Z-yb-trp" secondAttribute="leading" id="Yag-lC-iHB"/>
+                            <constraint firstItem="aaQ-xZ-Ep5" firstAttribute="centerY" secondItem="22Z-yb-trp" secondAttribute="centerY" constant="-21.5" id="Z62-GH-mCG"/>
                             <constraint firstItem="WFe-mh-sus" firstAttribute="top" secondItem="yx9-4Y-ogG" secondAttribute="bottom" id="k7I-se-0pi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="card" destination="aaQ-xZ-Ep5" id="t0d-cx-fZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ApC-og-fOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0Ce-1d-ScP">
+                    <connections>
+                        <action selector="panCard:" destination="Ewf-Ga-Yhy" id="XEb-bx-WUH"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="8277.6000000000004" y="801.94902548725645"/>
         </scene>
