@@ -32,5 +32,50 @@ class OnceViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.bckGImageView.alpha = 1
+        }) { (true) in
+            
+            self.showLabel()
+        }
+    }
+    
+    func showLabel(){
+        UIView.animate(withDuration: 1, animations: {
+            self.titleLabel.alpha = 1
+        }, completion: { (true) in
+            self.showDescLabel()
+        })
+    }
+    
+    func showDescLabel(){
+        UIView.animate(withDuration: 1, animations: { 
+            self.descLabel.alpha = 1
+        }) { (true) in
+            self.showBtnTxt()
+        }
+    }
+    
+    func showBtnTxt(){
+        UIView.animate(withDuration: 1) { 
+            self.goBtn.alpha = 1
+            self.nextLabel.alpha = 1
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
