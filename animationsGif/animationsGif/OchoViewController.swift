@@ -46,5 +46,7 @@ class OchoViewController: UIViewController {
     func radiant(_ degree:Double)-> CGFloat {
         return CGFloat(degree * .pi / degree)
     }
+    
+    @IBAction func unwindToOcho(_: UIStoryboardSegue){}
  
 }
