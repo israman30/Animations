@@ -41,15 +41,17 @@ class OnceCardViewController: UIViewController {
             if card.center.x < 75 {
                 // Move to the left side
                 UIView.animate(withDuration: 0.3, animations: {
-                    card.center = CGPoint(x: card.center.x - 200, y: card.center.y)
+                    card.center = CGPoint(x: card.center.x - 200, y: card.center.y + 75)
+                    card.alpha = 0
                 })
                 return
+                
             } else if card.center.x > (view.frame.width - 75) {
                 // Move to the right side
                 UIView.animate(withDuration: 0.3, animations: { 
-                    card.center = CGPoint(x: card.center.x + 200, y: card.center.y) 
+                    card.center = CGPoint(x: card.center.x + 200, y: card.center.y + 75)
+                    card.alpha = 0
                 })
-                
                 return
             }
             
@@ -59,5 +61,21 @@ class OnceCardViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func resetBtn(_ sender: Any) {
+        resetCard()
+    }
 
+    func resetCard(){
+        
+        UIView.animate(withDuration: 0.2) { 
+            self.card.center = self.view.center
+            self.thumbsImageView.alpha = 0
+            self.card.alpha = 1
+        }
+        
+    }
 }
+
+
+

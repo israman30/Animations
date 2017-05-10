@@ -64,6 +64,8 @@ class OnceViewController: UIViewController {
             self.nextLabel.alpha = 1
         }
     }
+    
+    @IBAction func unwindToOnceMain(_ :UIStoryboardSegue){}
 }
 
 
