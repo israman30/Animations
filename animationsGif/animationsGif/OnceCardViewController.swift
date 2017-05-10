@@ -34,6 +34,8 @@ class OnceCardViewController: UIViewController {
             thumbsImageView.tintColor = UIColor.red
         }
         
+        thumbsImageView.alpha = abs(xCenter) / view.center.x
+        
         if sender.state == UIGestureRecognizerState.ended {
             UIView.animate(withDuration: 0.2) {
                 card.center = self.view.center

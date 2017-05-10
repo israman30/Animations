@@ -1071,8 +1071,8 @@
                                             <constraint firstAttribute="width" constant="283" id="trL-uS-dTR"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icons8-thumbs_down" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-H0-flW">
-                                        <rect key="frame" x="142" y="175" width="40" height="40"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="icons8-thumbs_down" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-H0-flW">
+                                        <rect key="frame" x="125" y="178" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
