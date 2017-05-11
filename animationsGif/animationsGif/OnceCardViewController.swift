@@ -14,8 +14,12 @@ class OnceCardViewController: UIViewController {
     
     @IBOutlet weak var thumbsImageView: UIImageView!
     
+    var divisor: CGFloat!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        divisor = (view.frame.width / 2) / 0.61
 
         card.layer.cornerRadius = 10
     }
@@ -25,6 +29,8 @@ class OnceCardViewController: UIViewController {
         let xCenter = card.center.x - view.center.x
         
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
+        
+        card.transform = CGAffineTransform(rotationAngle: xCenter / divisor)
         
         if xCenter > 0 {
             thumbsImageView.image = #imageLiteral(resourceName: "icons8-thumbs_up")
@@ -72,6 +78,7 @@ class OnceCardViewController: UIViewController {
             self.card.center = self.view.center
             self.thumbsImageView.alpha = 0
             self.card.alpha = 1
+            self.card.transform = .identity
         }
         
     }
