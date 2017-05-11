@@ -1114,18 +1114,23 @@
                                             <constraint firstAttribute="width" constant="283" id="trL-uS-dTR"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="icons8-thumbs_down" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-H0-flW">
-                                        <rect key="frame" x="125" y="178" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="icons8-thumbs_down" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-H0-flW">
+                                        <rect key="frame" x="100" y="166" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6Jh-4B-O40"/>
+                                            <constraint firstAttribute="width" constant="100" id="RHe-tG-fte"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="y74-pM-zLI" secondAttribute="trailing" constant="8" id="1Sw-4W-hJB"/>
+                                    <constraint firstItem="y74-pM-zLI" firstAttribute="top" secondItem="XhY-H0-flW" secondAttribute="bottom" constant="-175" id="1yH-0U-xWL"/>
                                     <constraint firstAttribute="height" constant="350" id="BVa-JH-Qi6"/>
                                     <constraint firstAttribute="width" constant="300" id="IQX-VW-vXV"/>
                                     <constraint firstItem="JGr-Mo-Rxc" firstAttribute="leading" secondItem="aaQ-xZ-Ep5" secondAttribute="leading" constant="80" id="K9t-vi-v9D"/>
+                                    <constraint firstItem="XhY-H0-flW" firstAttribute="centerX" secondItem="aaQ-xZ-Ep5" secondAttribute="centerX" id="LUH-z4-ADg"/>
                                     <constraint firstItem="y74-pM-zLI" firstAttribute="top" secondItem="JGr-Mo-Rxc" secondAttribute="bottom" constant="8" id="b9p-0Y-W9n"/>
                                     <constraint firstItem="QEq-yN-Cu2" firstAttribute="top" secondItem="aaQ-xZ-Ep5" secondAttribute="top" constant="8" id="d59-Ye-Ium"/>
                                     <constraint firstItem="QEq-yN-Cu2" firstAttribute="leading" secondItem="aaQ-xZ-Ep5" secondAttribute="leading" constant="42" id="dNR-FR-5nS"/>
@@ -1296,7 +1301,7 @@
         <image name="arrow-1" width="200" height="200"/>
         <image name="book" width="400" height="400"/>
         <image name="icons8-expand_arrow_filled" width="25" height="25"/>
-        <image name="icons8-thumbs_down" width="25" height="25"/>
+        <image name="icons8-thumbs_down" width="75" height="75"/>
         <image name="mazinger_z" width="1760" height="1004"/>
         <image name="monkey" width="640" height="413"/>
         <image name="night" width="2048" height="2048"/>
