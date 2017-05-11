@@ -28,7 +28,8 @@ class OnceViewController: UIViewController {
         descLabel.alpha = 0
         goBtn.alpha = 0
         nextLabel.alpha = 0
-     
+        
+        goBtn.layer.cornerRadius = 30
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -23,6 +23,7 @@ class OnceCardViewController: UIViewController {
 
         card.layer.cornerRadius = 10
     }
+    
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
         let card = sender.view!
         let point = sender.translation(in: view)
@@ -30,7 +31,8 @@ class OnceCardViewController: UIViewController {
         
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
         
-        card.transform = CGAffineTransform(rotationAngle: xCenter / divisor)
+        let scale = min(100 / abs(xCenter), 1)
+        card.transform = CGAffineTransform(rotationAngle: xCenter / divisor).scaledBy(x: scale, y: scale)
         
         if xCenter > 0 {
             thumbsImageView.image = #imageLiteral(resourceName: "icons8-thumbs_up")

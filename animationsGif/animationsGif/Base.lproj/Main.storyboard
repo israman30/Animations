@@ -978,13 +978,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-1X-VE9">
-                                <rect key="frame" x="157" y="382" width="60" height="60"/>
+                                <rect key="frame" x="157.5" y="382" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8Rf-6u-FGG"/>
                                     <constraint firstAttribute="width" constant="60" id="odX-z5-2NO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="57"/>
-                                <state key="normal" title="&gt;"/>
+                                <state key="normal" title="&gt;" image="arrow-1"/>
                                 <connections>
                                     <segue destination="Ewf-Ga-Yhy" kind="modal" id="8KP-XM-ARe"/>
                                 </connections>
@@ -1250,6 +1250,7 @@
         <image name="R2D2-icon" width="512" height="512"/>
         <image name="Y3gTzi" width="640" height="1136"/>
         <image name="amazonia" width="1023" height="666"/>
+        <image name="arrow-1" width="200" height="200"/>
         <image name="book" width="400" height="400"/>
         <image name="icons8-expand_arrow_filled" width="25" height="25"/>
         <image name="icons8-thumbs_down" width="25" height="25"/>
