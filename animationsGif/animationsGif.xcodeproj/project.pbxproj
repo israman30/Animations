@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0AFFCD1ECFBC16000D37D2 /* DoceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AFFCC1ECFBC16000D37D2 /* DoceViewController.swift */; };
 		8D10808E1E6F1B0700824319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10808D1E6F1B0700824319 /* AppDelegate.swift */; };
 		8D1080901E6F1B0700824319 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10808F1E6F1B0700824319 /* ViewController.swift */; };
 		8D1080931E6F1B0800824319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1080911E6F1B0800824319 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0AFFCC1ECFBC16000D37D2 /* DoceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoceViewController.swift; sourceTree = "<group>"; };
 		8D10808A1E6F1B0700824319 /* animationsGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animationsGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D10808D1E6F1B0700824319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D10808F1E6F1B0700824319 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				8D230BF61EC237610092CE06 /* OchoViewController.swift */,
 				8D230BF81EC282210092CE06 /* NineViewController.swift */,
 				8D230BFA1EC352770092CE06 /* TenViewController.swift */,
+				8D0AFFCC1ECFBC16000D37D2 /* DoceViewController.swift */,
 			);
 			name = LogicVC;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				8D10808E1E6F1B0700824319 /* AppDelegate.swift in Sources */,
 				8D230BF91EC282210092CE06 /* NineViewController.swift in Sources */,
 				8D9BFEA31E9FE40F00713B13 /* SevenViewController.swift in Sources */,
+				8D0AFFCD1ECFBC16000D37D2 /* DoceViewController.swift in Sources */,
 				8D9BFE961E9D8F2B00713B13 /* ThirdTableViewController.swift in Sources */,
 				8D230BF71EC237610092CE06 /* OchoViewController.swift in Sources */,
 			);
