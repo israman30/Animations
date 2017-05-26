@@ -76,6 +76,7 @@
 		8D9BFE9E1E9EC99800713B13 /* SixOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE9D1E9EC99800713B13 /* SixOneViewController.swift */; };
 		8D9BFEA01E9ECB8F00713B13 /* TransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFE9F1E9ECB8F00713B13 /* TransitionVC.swift */; };
 		8D9BFEA31E9FE40F00713B13 /* SevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */; };
+		8DF96BEE1ED8881300AF7B42 /* ThirdTeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF96BED1ED8881300AF7B42 /* ThirdTeenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		8D9BFE9D1E9EC99800713B13 /* SixOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixOneViewController.swift; sourceTree = "<group>"; };
 		8D9BFE9F1E9ECB8F00713B13 /* TransitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionVC.swift; sourceTree = "<group>"; };
 		8D9BFEA21E9FE40F00713B13 /* SevenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SevenViewController.swift; sourceTree = "<group>"; };
+		8DF96BED1ED8881300AF7B42 /* ThirdTeenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdTeenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 				8D230BF81EC282210092CE06 /* NineViewController.swift */,
 				8D230BFA1EC352770092CE06 /* TenViewController.swift */,
 				8D0AFFCC1ECFBC16000D37D2 /* DoceViewController.swift */,
+				8DF96BED1ED8881300AF7B42 /* ThirdTeenViewController.swift */,
 			);
 			name = LogicVC;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF96BEE1ED8881300AF7B42 /* ThirdTeenViewController.swift in Sources */,
 				8D2AE30D1EC3C60100315E0B /* OnceCardViewController.swift in Sources */,
 				8D9BFE941E9D80D900713B13 /* MovingButtonTableViewController.swift in Sources */,
 				8D9BFE9A1E9DB22700713B13 /* FiveTableViewController.swift in Sources */,
