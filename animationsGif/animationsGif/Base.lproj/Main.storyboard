@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hlt-Vh-Fq7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,72 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
-        <scene sceneID="vcE-nj-aWT">
-            <objects>
-                <viewController id="Hlt-Vh-Fq7" customClass="MenuViewController" customModule="animationsGif" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dqm-AB-hpH"/>
-                        <viewControllerLayoutGuide type="bottom" id="gRu-ey-0Tb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="L7B-mS-xg8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w88-sO-i1G">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EMu-03-k8h">
-                                    <size key="itemSize" width="150" height="150"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="XKU-kI-8Vb" customClass="MenuCollectionViewCell" customModule="animationsGif" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sz-g8-bOq">
-                                                    <rect key="frame" x="10" y="42" width="130" height="66"/>
-                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="0sz-g8-bOq" secondAttribute="trailing" constant="10" id="HGe-W5-THT"/>
-                                            <constraint firstAttribute="bottom" secondItem="0sz-g8-bOq" secondAttribute="bottom" constant="42" id="gGg-S7-EXl"/>
-                                            <constraint firstItem="0sz-g8-bOq" firstAttribute="top" secondItem="XKU-kI-8Vb" secondAttribute="top" constant="42" id="yA5-oE-u4A"/>
-                                            <constraint firstItem="0sz-g8-bOq" firstAttribute="leading" secondItem="XKU-kI-8Vb" secondAttribute="leading" constant="10" id="yZl-uG-dua"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="menuLbl" destination="0sz-g8-bOq" id="2Ey-mJ-wVw"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="w88-sO-i1G" firstAttribute="top" secondItem="L7B-mS-xg8" secondAttribute="top" id="69h-Zy-tib"/>
-                            <constraint firstItem="w88-sO-i1G" firstAttribute="leading" secondItem="L7B-mS-xg8" secondAttribute="leading" id="CBh-Lh-HLD"/>
-                            <constraint firstAttribute="trailing" secondItem="w88-sO-i1G" secondAttribute="trailing" id="FeD-7f-nJn"/>
-                            <constraint firstItem="gRu-ey-0Tb" firstAttribute="top" secondItem="w88-sO-i1G" secondAttribute="bottom" id="lEG-Ph-ldl"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="menuCollectionView" destination="w88-sO-i1G" id="wcU-z4-Z1N"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yLj-d1-LLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-740" y="149.77511244377811"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

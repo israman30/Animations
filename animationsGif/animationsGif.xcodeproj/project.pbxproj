@@ -63,8 +63,6 @@
 		8D1081001E6F209E00824319 /* 47.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D1080CE1E6F209E00824319 /* 47.gif */; };
 		8D1081011E6F209E00824319 /* 48.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D1080CF1E6F209E00824319 /* 48.gif */; };
 		8D1081021E6F209E00824319 /* 49.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D1080D01E6F209E00824319 /* 49.gif */; };
-		8D1374271EDA327E007B0AEF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1374261EDA327E007B0AEF /* MenuViewController.swift */; };
-		8D1374291EDA3467007B0AEF /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1374281EDA3467007B0AEF /* MenuCollectionViewCell.swift */; };
 		8D230BF71EC237610092CE06 /* OchoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D230BF61EC237610092CE06 /* OchoViewController.swift */; };
 		8D230BF91EC282210092CE06 /* NineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D230BF81EC282210092CE06 /* NineViewController.swift */; };
 		8D230BFB1EC352770092CE06 /* TenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D230BFA1EC352770092CE06 /* TenViewController.swift */; };
@@ -140,8 +138,6 @@
 		8D1080CE1E6F209E00824319 /* 47.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 47.gif; sourceTree = "<group>"; };
 		8D1080CF1E6F209E00824319 /* 48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 48.gif; sourceTree = "<group>"; };
 		8D1080D01E6F209E00824319 /* 49.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 49.gif; sourceTree = "<group>"; };
-		8D1374261EDA327E007B0AEF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		8D1374281EDA3467007B0AEF /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D230BF61EC237610092CE06 /* OchoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OchoViewController.swift; sourceTree = "<group>"; };
 		8D230BF81EC282210092CE06 /* NineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NineViewController.swift; sourceTree = "<group>"; };
 		8D230BFA1EC352770092CE06 /* TenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenViewController.swift; sourceTree = "<group>"; };
@@ -190,8 +186,6 @@
 			children = (
 				8D1081031E6F20AB00824319 /* images */,
 				8D10808D1E6F1B0700824319 /* AppDelegate.swift */,
-				8D1374261EDA327E007B0AEF /* MenuViewController.swift */,
-				8D1374281EDA3467007B0AEF /* MenuCollectionViewCell.swift */,
 				8D2AE30F1EC3C6B800315E0B /* LogicVC */,
 				8D2AE30B1EC3C5CD00315E0B /* OnceVC */,
 				8D9BFEA11E9EFC7200713B13 /* TansitionVC */,
@@ -436,13 +430,11 @@
 				8D2AE30A1EC3A44E00315E0B /* OnceViewController.swift in Sources */,
 				8D9BFE9E1E9EC99800713B13 /* SixOneViewController.swift in Sources */,
 				8D1080901E6F1B0700824319 /* ViewController.swift in Sources */,
-				8D1374291EDA3467007B0AEF /* MenuCollectionViewCell.swift in Sources */,
 				8D9BFE981E9DAA1600713B13 /* FourViewController.swift in Sources */,
 				8D9BFE9C1E9EC97C00713B13 /* SixViewController.swift in Sources */,
 				8D230BFB1EC352770092CE06 /* TenViewController.swift in Sources */,
 				8D10808E1E6F1B0700824319 /* AppDelegate.swift in Sources */,
 				8D230BF91EC282210092CE06 /* NineViewController.swift in Sources */,
-				8D1374271EDA327E007B0AEF /* MenuViewController.swift in Sources */,
 				8D9BFEA31E9FE40F00713B13 /* SevenViewController.swift in Sources */,
 				8D0AFFCD1ECFBC16000D37D2 /* DoceViewController.swift in Sources */,
 				8D9BFE961E9D8F2B00713B13 /* ThirdTableViewController.swift in Sources */,
