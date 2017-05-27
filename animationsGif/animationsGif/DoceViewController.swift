@@ -16,8 +16,6 @@ class DoceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,5 +30,7 @@ class DoceViewController: UIViewController {
             self.gradientView.transform = CGAffineTransform(translationX: x, y: 0)
         })
     }
+    
+    @IBAction func unwindToDoce(_: UIStoryboardSegue){}
     
 }

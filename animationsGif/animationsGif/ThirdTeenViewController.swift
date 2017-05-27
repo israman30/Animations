@@ -37,6 +37,9 @@ class ThirdTeenViewController: UIViewController {
             
         }, completion: nil)
         
+        UIView.animate(withDuration: 2.0, delay: 0.5, animations: {
+            self.view.backgroundColor = UIColor.yellow
+        })
         
     }
 
